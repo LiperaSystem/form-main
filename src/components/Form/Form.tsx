@@ -46,7 +46,7 @@ export const Form: FunctionComponent = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post("http://127.0.0.1:3000/pdf", data);
+      const response = await axios.post("https://lipera-back-latest.onrender.com/pdf", data);
       if (response.status === 200) {
         setSubmitted(true);
       }
